@@ -9,8 +9,9 @@ class ArithTest (unittest.TestCase):
     def runTest (self):
 
         self.failUnless(self.cal.add(1, 2) == 3, msg='1+2 = 3 failed')
-
         self.failIf(self.cal.divide(10, 2) == 3, msg='10/2 = 3 fail test failed')
+        self.failUnlessEqual(self.cal.multiply(2, 2), 4, msg='2 * 2 failed')
+        self.assertTrue(self.cal.subtract(13, 6) == 7, msg='13 - 6 failed')
 
 
 

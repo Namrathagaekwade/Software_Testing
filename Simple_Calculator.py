@@ -7,7 +7,7 @@ class Calculator:
     def subtract(self,x, y):
         """This function subtracts two numbers"""
 
-        return 0
+        return x-y
 
     def multiply(self,x, y):
         """This function multiplies two numbers"""

@@ -17,5 +17,5 @@ class Calculator:
     def divide(self,x, y):
         """This function divides two numbers"""
 
-        return 0
+        return x/y
 

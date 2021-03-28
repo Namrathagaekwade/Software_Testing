@@ -27,12 +27,12 @@ class Calculator():
           firstOperand - Any number
           secondOperand - Any number
         """
-        return 0
+        return firstOperand * secondOperand
     def divide(self, firstOperand, secondOperand):   
         """Divides two numbers together
         Arguments:
           firstOperand - Any number
           secondOperand - Any number
         """
-        return 0
+        return firstOperand / secondOperand
 

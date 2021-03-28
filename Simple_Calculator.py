@@ -20,7 +20,7 @@ class Calculator():
           firstOperand - Any number
           secondOperand - Any number
         """
-        return 0
+        return firstOperand - secondOperand
     def multiply(self, firstOperand, secondOperand):
         """Multiplies two numbers together
         Arguments:

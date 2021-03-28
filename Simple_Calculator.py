@@ -13,26 +13,26 @@ class Calculator():
           firstOperand - Any number
           secondOperand - Any number
         """
-        return firstOperand + secondOperand
+        return 0
     def subtract(self, firstOperand, secondOperand): 
         """Subtracts two numbers together
         Arguments:
           firstOperand - Any number
           secondOperand - Any number
         """
-        return firstOperand - secondOperand
+        return 0
     def multiply(self, firstOperand, secondOperand):
         """Multiplies two numbers together
         Arguments:
           firstOperand - Any number
           secondOperand - Any number
         """
-        return firstOperand * secondOperand
+        return 0
     def divide(self, firstOperand, secondOperand):   
         """Divides two numbers together
         Arguments:
           firstOperand - Any number
           secondOperand - Any number
         """
-        return firstOperand / secondOperand
+        return 0
 

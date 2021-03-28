@@ -24,13 +24,13 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(2, 5), 9, msg=None)
 
     def test_subtract(self):
-        self.assertEqual(self.calc.subtract(9, 7), 2, msg=None)
+        self.assertEqual(self.calc.subtract(9, 8), 2, msg=None)
 
     def test_multiply(self):
-        self.assertEqual(self.calc.multiply(2, 7), 14, msg=None) 
+        self.assertEqual(self.calc.multiply(2, 5), 14, msg=None) 
 
     def test_divide(self):
-        self.assertEqual(self.calc.divide(4, 2), 2, msg=None)           
+        self.assertEqual(self.calc.divide(4, 1), 2, msg=None)           
 
 
 if __name__ == '__main__':

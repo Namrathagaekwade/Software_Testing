@@ -1,39 +1,37 @@
 import unittest
-from Simple_Calculator import Calculator
+from Simple_Calculator import *
 
-#A series of tests designed to see if the functions fail
-class ArithTest (unittest.TestCase):
-    def setUp(self) :
-        self.cal = Calculator()
+def setUpModule():
+    print('set up module')
 
-    def runTest (self):
+def tearDownModule():
+    print('tear down module')
 
-        self.assertEqual(self.cal.add(1, 2), 3, msg='1+2 = 3 failed')
-        self.failIf(self.cal.divide(10, 2) == 3, msg='10/2 = 3 fail test failed')
-        self.failUnlessEqual(self.cal.multiply(2, 2), 4, msg='2 * 2 failed')
-        self.assertTrue(self.cal.subtract(13, 6) == 7, msg='13 - 6 failed')
-        self.assertTrue(self.cal.multiply(5, 5) == 25, msg='5 * 5 failed')
-        self.assertEqual(self.cal.add(10, 15), 25, msg='10 + 15 = 25 failed')
-        self.assertEqual(self.cal.divide(50, 10), 5, msg='50 / 10 failed')
-        self.assertFalse(self.cal.subtract(20, 5) == 14, msg='20 - 5 = 14 fail test failed')
-        self.assertEqual(self.cal.divide(5,5), 1)
+class TestCalculator(unittest.TestCase):
 
-def suite():
+    # Create an instance of the calculator that can be used in all tests
+    @classmethod
+    def setUpClass(self):
+        print('Set up class')
+        self.calc = Calculator()
 
-    suite = unittest.TestSuite()
+    @classmethod
+    def tearDownClass(self):
+        print('Tear down class')
 
-    suite.addTest (ArithTest())
+    # Write test methods for subtract, multiply, and divide
+    def test_add(self):
+        self.assertEqual(self.calc.add(2, 7), 9, msg=None)
 
-    return suite
+    def test_subtract(self):
+        self.assertEqual(self.calc.subtract(9, 7), 2, msg=None)
 
+    def test_multiply(self):
+        self.assertEqual(self.calc.multiply(2, 7), 14, msg=None) 
 
-
+    def test_divide(self):
+        self.assertEqual(self.calc.divide(4, 2), 2, msg=None)           
 
 
 if __name__ == '__main__':
-
-    runner = unittest.TextTestRunner()
-
-    test_suite = suite()
-
-    runner.run (test_suite)
+    unittest.main()

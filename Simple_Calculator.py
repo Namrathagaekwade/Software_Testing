@@ -13,7 +13,7 @@ class Calculator():
           firstOperand - Any number
           secondOperand - Any number
         """
-        return 0
+        return firstOperand + secondOperand
     def subtract(self, firstOperand, secondOperand): 
         """Subtracts two numbers together
         Arguments:

@@ -2,7 +2,7 @@ class Calculator:
     def add(self,x, y):
         """This function adds two numbers"""
 
-        return 0
+        return x+y
 
     def subtract(self,x, y):
         """This function subtracts two numbers"""
